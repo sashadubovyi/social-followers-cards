@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/tweets" element={<UsersPage />} />
+          <Route path="tweets" element={<UsersPage />} />
           <Route path="*" element={<Navigate to={"/"} />} />
         </Route>
       </Routes>
