@@ -1,9 +1,9 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://649d475f9bac4a8e669d7cc8.mockapi.io/users";
+axios.defaults.baseURL = "https://649d475f9bac4a8e669d7cc8.mockapi.io";
 
 export async function fetchUsers(page) {
-  const url = "";
+  const url = "/users";
   const params = {
     completed: false,
     page: page,
@@ -14,13 +14,13 @@ export async function fetchUsers(page) {
 }
 
 export async function updateUser(id, userData) {
-  const url = `/${id}`;
+  const url = `/users/${id}`;
   const { data } = await axios.put(url, userData);
   return data;
 }
 
 export async function filterUser(id, userData) {
-  const url = `/${id}`;
+  const url = `/users/${id}`;
   const { data } = await axios.get(url, { params: userData });
   console.log(data);
   return data;
