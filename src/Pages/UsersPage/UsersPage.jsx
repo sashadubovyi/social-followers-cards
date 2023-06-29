@@ -17,7 +17,7 @@ function UsersPage() {
   );
   const [page, setPage] = useState(1);
   const [hasMoreUsers, setHasMoreUsers] = useState(true);
-  const [filter, setFilter] = useState("value1"); // Значення за замовчуванням - "All"
+  const [filter, setFilter] = useState("All");
 
   const fetchUsersAPI = async (pageNumber) => {
     const data = await fetchUsers(pageNumber);
