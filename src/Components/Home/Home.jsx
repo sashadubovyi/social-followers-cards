@@ -10,7 +10,7 @@ function Home() {
           world. <br />
           Welcome chick.
         </SubTitle>
-        <GoToUsers to={"/tweets"}>Take Flight</GoToUsers>
+        <GoToUsers to={"tweets"}>Take Flight</GoToUsers>
       </Main>
     </>
   );
