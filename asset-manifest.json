@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/social-followers-cards/static/css/main.a2e2074c.css",
-    "main.js": "/social-followers-cards/static/js/main.afc4649c.js",
+    "main.css": "/social-followers-cards/static/css/main.92becb85.css",
+    "main.js": "/social-followers-cards/static/js/main.06dc7941.js",
     "static/media/icecreamlogo.png": "/social-followers-cards/static/media/icecreamlogo.5a7709e8c87a83ae7563.png",
     "static/media/icecream.png": "/social-followers-cards/static/media/icecream.9a55c9f7e4ae23e69fd4.png",
     "static/media/chat.png": "/social-followers-cards/static/media/chat.010ab3c33bc13f300d33.png",
     "index.html": "/social-followers-cards/index.html",
-    "main.a2e2074c.css.map": "/social-followers-cards/static/css/main.a2e2074c.css.map",
-    "main.afc4649c.js.map": "/social-followers-cards/static/js/main.afc4649c.js.map"
+    "main.92becb85.css.map": "/social-followers-cards/static/css/main.92becb85.css.map",
+    "main.06dc7941.js.map": "/social-followers-cards/static/js/main.06dc7941.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2e2074c.css",
-    "static/js/main.afc4649c.js"
+    "static/css/main.92becb85.css",
+    "static/js/main.06dc7941.js"
   ]
 }
