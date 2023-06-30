@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const UserItem = styled.li`
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   user-select: none;
-
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   @keyframes scale-up-center {
     0% {
@@ -31,6 +29,13 @@ export const UserCard = styled.div`
     rgba(0, 0, 0, 0.23);
   padding-bottom: 36px;
   position: relative;
+  transition: all 0.2s ease-in-out;
+
+  ${({ isFollowing }) => {
+    return isFollowing
+      ? "background: linear-gradient(142deg, rgb(71, 28, 169) 0%, rgb(163, 54, 123) 69.1%, rgb(153, 41, 146) 100%);"
+      : "";
+  }}
 `;
 
 export const ChatImg = styled.img`
@@ -80,7 +85,6 @@ export const Imgborder = styled.img`
 `;
 
 export const Tweets = styled.p`
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
@@ -105,7 +109,6 @@ export const Line = styled.img`
 `;
 
 export const Followers = styled.p`
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
@@ -141,7 +144,6 @@ export const ButtonFollowing = styled.button`
 `;
 
 export const BtnText = styled.span`
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 21.94px;

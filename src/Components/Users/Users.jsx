@@ -25,6 +25,7 @@ function Users({
   setIsFollowing,
 }) {
   const [followersCount, setFollowersCount] = useState(followers);
+
   const changeFollowBtn = () => {
     if (!isFollowing.includes(id)) {
       setIsFollowing((prevstate) => [...prevstate, id]);
@@ -63,7 +64,7 @@ function Users({
   return (
     <>
       <UserItem>
-        <UserCard key={id}>
+        <UserCard key={id} isFollowing={isFollowing.includes(id)}>
           <ChatImg src={chat} alt="chat" />
           <Box>
             <GoIT src={goit} alt="goit" />

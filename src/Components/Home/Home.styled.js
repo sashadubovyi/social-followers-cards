@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import chicks from "../../images/chick.png";
+import logo from "../../images/icecreamlogo.png";
 import { NavLink } from "react-router-dom/dist";
 
 export const Main = styled.div`
@@ -9,22 +9,19 @@ export const Main = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  background-image: url(${chicks});
+  background-image: url(${logo});
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position-x: center;
+  background-position: center;
   background-position-y: calc(50% + 100px);
 
   @media (min-width: 768px) {
     background-size: 50%;
-    background-position-x: calc(50% + 150px);
-    background-position-y: calc(50% + 50px);
   }
 
   @media (min-width: 1280px) {
     background-size: 40%;
-    background-position-x: calc(50% + 300px);
-    background-position-y: calc(50% + 20px);
+    background-position-y: calc(50% + 150px);
   }
 
   animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -40,31 +37,25 @@ export const Main = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 24.38px;
-  text-transform: uppercase;
-  color: #8c57c4;
-
+export const Title = styled.img`
+  width: 350px;
   @media (min-width: 768px) {
-    font-size: 30px;
+    width: 600px;
   }
 
   @media (min-width: 1280px) {
-    font-size: 50px;
+    width: 1000px;
   }
 `;
 
 export const SubTitle = styled.p`
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 21.94px;
   color: #373737;
-  text-transform: uppercase;
   width: 300px;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 12px;
